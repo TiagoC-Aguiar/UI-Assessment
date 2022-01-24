@@ -9,7 +9,11 @@ const Header = ({ contact }) => {
         <h1>Accountant Overview</h1>
       </Title>
       <div className="contact-container">
-        <Contact name={contact.name} />
+        <Contact
+          name={contact.name}
+          email={contact.email}
+          phone={contact.phone}
+        />
       </div>
     </Container>
   );
