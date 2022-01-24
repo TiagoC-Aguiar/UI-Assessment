@@ -1,13 +1,13 @@
 import React from "react";
 import { Contact } from "src/components";
-import { Container } from "./style";
+import { Container, Title } from "./styled";
 
 const Header = ({ contact }) => {
   return (
     <Container>
-      <div className="title">
+      <Title>
         <h1>Accountant Overview</h1>
-      </div>
+      </Title>
       <div className="contact-container">
         <Contact name={contact.name} />
       </div>
