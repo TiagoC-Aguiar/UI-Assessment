@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    border: 1px solid black;
     color: #4a4748;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        text-transform: uppercase;
+        color: #a19f9f;
+    }
 `;
 
 export const SectionContainer = styled.div`
-    border: 1px solid blue;
     display: flex;
+    width: 100%;
 `;

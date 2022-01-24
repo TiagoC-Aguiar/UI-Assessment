@@ -1,12 +1,13 @@
 import { Avatar } from "src/components";
 import PropTypes from 'prop-types';
 import { Container, SectionContainer } from "./styled";
+import ContactInfo from './ContactInfo';
 
 const Section = ({ name }) => {
   return (
     <SectionContainer>
       <Avatar name={name} />
-      <div>Suport: {name}</div>
+      <ContactInfo name={name} />
     </SectionContainer>
   );
 };
@@ -14,7 +15,7 @@ const Section = ({ name }) => {
 const Contact = ({ name }) => {
   return (
     <Container>
-      <h2>YOUR FEEFO SUPPORT CONTACT</h2>
+      <h2>Your Feefo support contact</h2>
       <Section name={name} />
     </Container>
   );

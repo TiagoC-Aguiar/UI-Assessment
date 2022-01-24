@@ -12,4 +12,5 @@ export const Container = styled.div`
   background-color: #f9ce02;
   font-size: 2rem;
   font-weight: bold;
+  border-radius: 8px;
 `;
