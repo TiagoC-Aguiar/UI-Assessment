@@ -1,6 +1,10 @@
-import {Container} from './style';
+import React from "react";
+import { Avatar } from "../";
+import { Container } from "./style";
 
-const Header = () => {
+const Header = ({ contact }) => {
+  //   console.log("CONTACT: ", contact);
+
   return (
     <Container>
       <div className="title">
@@ -8,6 +12,8 @@ const Header = () => {
       </div>
       <div className="contact-container">
         <h2>YOUR FEEFO SUPPORT CONTACT</h2>
+        <Avatar />
+        <div>Suport: {contact.name}</div>
       </div>
     </Container>
   );
