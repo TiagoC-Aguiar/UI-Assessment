@@ -1,6 +1,6 @@
 import { Container } from "./styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
 
 const ContactInfo = ({ name, email, phone }) => {
   return (
@@ -9,7 +9,8 @@ const ContactInfo = ({ name, email, phone }) => {
       <div>
         <FontAwesomeIcon size="lg" icon={faEnvelope} />
         <span className={'info'}>{email}</span>
-        <span className={'info phone'}>{phone}</span>
+        <FontAwesomeIcon size="lg" icon={faPhoneSquare} />
+        <span className={'info'}>{phone}</span>
       </div>
     </Container>
   );

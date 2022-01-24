@@ -15,10 +15,6 @@ export const Container = styled.div`
     }
 
     .info {
-        margin-left: 10px;
-    }
-
-    .phone {
-        margin-left: 20px;
+        margin: 0 12px;
     }
 `;
