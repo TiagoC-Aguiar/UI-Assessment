@@ -1,6 +1,6 @@
-import { Container, SalesContent } from "./styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { Container, SalesContent, UploadsLines } from "./styled";
 
 const SalesCard = () => {
   return (
@@ -13,12 +13,20 @@ const SalesCard = () => {
           </div>
           <FontAwesomeIcon size="lg" color={"#777"} icon={faInfoCircle} />
         </div>
-        <span>You had 0 uploads and 0 lines added.</span>
+        <span>
+          You had <strong>0 uploads</strong> and <strong>0</strong> lines added.
+        </span>
       </SalesContent>
-      <div>
-        <div>0% upload</div>
-        <div>0% lines</div>
-      </div>
+      <UploadsLines>
+        <div className="card-content">
+          <span className="percentage">0%</span>
+          <span className="description">upload success</span>
+        </div>
+        <div className="card-content">
+          <span className="percentage">0%</span>
+          <span className="description">lines saved</span>
+        </div>
+      </UploadsLines>
     </Container>
   );
 };
