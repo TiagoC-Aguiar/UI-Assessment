@@ -17,21 +17,4 @@ const AccountOverview = ({ data }) => {
   );
 };
 
-// AccountOverview.propTypes = {
-//   data: PropTypes.shape({
-//     supportContact: PropTypes.shape({
-//       name: PropTypes.string,
-//       email: PropTypes.string,
-//       phone: PropTypes.string,
-//     }).isRequired,
-//     salesOverview: PropTypes.shape({
-//       uploads: PropTypes.number,
-//       successfulUploads: PropTypes.number,
-//       linesAttempted: PropTypes.number,
-//       linesSaved: PropTypes.number,
-//       lastUploadDate: PropTypes.number,
-//     }).isRequired,
-//   }).isRequired,
-// };
-
 export default AccountOverview;
