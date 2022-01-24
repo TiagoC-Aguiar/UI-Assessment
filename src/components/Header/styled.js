@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  margin-bottom: 4%;
 `;
 
 export const Title = styled.div`
