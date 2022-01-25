@@ -4,8 +4,6 @@ import { Header, SalesCard } from "../components";
 import "./account-overview.css";
 
 const AccountOverview = ({ data }) => {
-  console.log("DATA: ", data);
-
   return (
     <div className="AccountOverview">
       <div className="AccountContainer">
