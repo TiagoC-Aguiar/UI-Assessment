@@ -7,7 +7,7 @@ const AccountOverview = ({ data }) => {
     <div className="AccountOverview">
       <div className="AccountContainer">
         <Header contact={data.supportContact} />
-        <SalesCard />
+        <SalesCard sales={data.salesOverview} />
       </div>
     </div>
   );
