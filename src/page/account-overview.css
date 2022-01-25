@@ -1,3 +1,9 @@
 .AccountOverview {
   color: #4a4748;
+  display: flex;
+  justify-content: center;
+}
+
+.AccountContainer {
+  width: 1014px;
 }

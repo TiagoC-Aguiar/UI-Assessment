@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const avatarSize = 82;
+const avatarSize = 80;
 
 export const Container = styled.div`
   display: flex;

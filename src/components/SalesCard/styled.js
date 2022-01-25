@@ -16,10 +16,19 @@ export const SalesContent = styled.div`
     margin-bottom: 20px;
   }
 
+  .sales-header .sales-title {
+    display: flex;
+    align-items: center;
+  }
+
   .sales {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-left: 12px;
+  }
+
+  span {
+    font-size: 1.38rem;
   }
 `;
 

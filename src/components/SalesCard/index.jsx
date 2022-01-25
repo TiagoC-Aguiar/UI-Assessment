@@ -7,11 +7,11 @@ const SalesCard = () => {
     <Container>
       <SalesContent>
         <div className="sales-header">
-          <div>
+          <div className="sales-title">
             <FontAwesomeIcon size="lg" color={"#3fb0eb"} icon={faUpload} />
             <span className="sales">Sales</span>
           </div>
-          <FontAwesomeIcon size="lg" color={"#777"} icon={faInfoCircle} />
+          <FontAwesomeIcon size="lg" color={"#888"} icon={faInfoCircle} />
         </div>
         <span>
           You had <strong>0 uploads</strong> and <strong>0</strong> lines added.

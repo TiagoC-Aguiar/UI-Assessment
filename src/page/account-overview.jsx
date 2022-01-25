@@ -5,8 +5,10 @@ import "./account-overview.css";
 const AccountOverview = ({ data }) => {
   return (
     <div className="AccountOverview">
-      <Header contact={data.supportContact} />
-      <SalesCard />
+      <div className="AccountContainer">
+        <Header contact={data.supportContact} />
+        <SalesCard />
+      </div>
     </div>
   );
 };
