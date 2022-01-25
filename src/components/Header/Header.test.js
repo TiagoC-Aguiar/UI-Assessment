@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 import Header from "./";
 
@@ -25,12 +25,18 @@ test("render header support contact", () => {
   expect(headerField).toBeTruthy();
 });
 
-// test("show support contact be uppercase", () => {
-//   const { getByText } = render(
-//     <Header
-//       contact={{ name: "test", email: "teste@email.com", phone: "991 221 342" }}
-//     />
-//   );
-//   const headerField = getByText(/YOUR FEEFO SUPPORT CONTACT/);
-//   expect(headerField).toBeInTheDocument();
-// });
+test("show support contact info", () => {
+  const { getByText } = render(
+    <Header
+      contact={{ name: "Ana", email: "teste@email.com", phone: "991 221 342" }}
+    />
+  );
+  const headerField = getByText(/YOUR FEEFO SUPPORT CONTACT/i);
+  const name = getByText('Ana');
+  const email = getByText('teste@email.com');
+  const phone = getByText('991 221 342');
+  expect(headerField).toBeInTheDocument();
+  expect(name).toBeTruthy();
+  expect(email).toBeInTheDocument();
+  expect(phone).toBeInTheDocument();
+});
