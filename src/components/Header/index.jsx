@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Contact } from "src/components";
 import { Container, Title } from "./styled";
@@ -15,6 +16,14 @@ const Header = ({ contact }) => {
       />
     </Container>
   );
+};
+
+Header.propTypes = {
+  contact: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    phone: PropTypes.string,
+  }).isRequired,
 };
 
 export default Header;

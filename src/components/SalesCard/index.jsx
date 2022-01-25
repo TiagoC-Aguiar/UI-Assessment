@@ -1,8 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { CardContent } from "src/components";
 import { Container, SalesContent, UploadsLines } from "./styled";
 
 const SalesCard = ({ sales }) => {
+  const props = [
+    {
+      percentage: sales.successfulUploads,
+      description: "upload success",
+    },
+    {
+      percentage: sales.linesSaved,
+      description: "lines saved",
+    },
+  ];
+
   return (
     <Container>
       <SalesContent>
@@ -19,14 +31,9 @@ const SalesCard = ({ sales }) => {
         </span>
       </SalesContent>
       <UploadsLines>
-        <div className="card-content">
-          <span className="percentage">{sales.successfulUploads}%</span>
-          <span className="description">upload success</span>
-        </div>
-        <div className="card-content">
-          <span className="percentage">{sales.linesSaved}%</span>
-          <span className="description">lines saved</span>
-        </div>
+        {props.map((value) => {
+          return <CardContent key={value.description} {...value} />;
+        })} 
       </UploadsLines>
     </Container>
   );
