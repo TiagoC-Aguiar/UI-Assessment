@@ -1,9 +1,15 @@
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import React from "react";
+
 import { Header, SalesCard } from "../components";
 import "./account-overview.css";
 
 const AccountOverview = ({ data }) => {
+
+  useEffect(() => {
+    document.title = "Account Overview";
+  }, []);
+
   return (
     <div className="AccountOverview">
       <div className="AccountContainer">
